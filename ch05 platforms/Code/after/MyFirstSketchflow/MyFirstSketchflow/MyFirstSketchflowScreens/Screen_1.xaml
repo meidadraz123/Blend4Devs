@@ -1,0 +1,57 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:Anno="http://schemas.microsoft.com/expression/blend/extensions/annotations/2008" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:pi="http://schemas.microsoft.com/prototyping/2010/interactivity"
+	mc:Ignorable="d Anno"
+	x:Class="MyFirstSketchflowScreens.Screen_1"
+	Width="640" Height="480">
+	<UserControl.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="ProjectDataSources.xaml"/>
+			</ResourceDictionary.MergedDictionaries>
+			<DataTemplate x:Key="CustomersItemTemplate">
+				<StackPanel>
+					<TextBlock Text="{Binding Name}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+					<TextBlock Text="{Binding PhoneNumber}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+					<Image Source="{Binding Picture}" HorizontalAlignment="Left" Height="64" Width="64"/>
+				</StackPanel>
+			</DataTemplate>
+		</ResourceDictionary>
+	</UserControl.Resources>
+
+	<Anno:AnnotationManager.Annotations>
+		<Anno:Annotation AuthorInitials="STW" Author="Shawn Wildermuth" Left="143.865" SerialNumber="1" Top="8" Timestamp="11/07/2011 09:28:48" Text="Make the title bigger...ANything else to changes?"/>
+	</Anno:AnnotationManager.Annotations>
+
+	<Grid x:Name="LayoutRoot" Background="White" DataContext="{Binding Source={StaticResource SampleDataSource}}">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="0.274*"/>
+			<ColumnDefinition Width="0.726*"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="0.175*"/>
+			<RowDefinition Height="0.718*"/>
+			<RowDefinition Height="0.107*"/>
+		</Grid.RowDefinitions>
+		<TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="-167,8,0,8" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="First Page" Width="390" FontSize="32"/>
+		<Button Content="Button" Grid.Column="1" HorizontalAlignment="Right" Margin="0,8,8,8" Grid.Row="2" Style="{StaticResource Button-Sketch}" Width="111">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pi:NavigateToScreenAction TargetScreen="MyFirstSketchflowScreens.Second_Secreen"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<ListBox x:Name="listBox" Margin="8" Grid.Row="1" Style="{StaticResource ListBox-Sketch}" ItemTemplate="{StaticResource CustomersItemTemplate}" ItemsSource="{Binding Customers}"/>
+		<Grid Grid.Column="1" DataContext="{Binding SelectedItem, ElementName=listBox}" Margin="8,8,203,137" Grid.Row="1" d:DataContext="{Binding Customers[0]}">
+			<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Style="{StaticResource BasicTextBlock-Sketch}" Text="Name"/>
+			<TextBlock Text="{Binding Name}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="104,0,0,0" Style="{StaticResource BasicTextBlock-Sketch}"/>
+			<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="0,24,0,0" Style="{StaticResource BasicTextBlock-Sketch}" Text="PhoneNumber"/>
+			<TextBlock Text="{Binding PhoneNumber}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="104,24,0,0" Style="{StaticResource BasicTextBlock-Sketch}"/>
+			<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="0,88,0,0" Style="{StaticResource BasicTextBlock-Sketch}" Text="Picture"/>
+			<Image Source="{Binding Picture}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="100" Margin="104,48,0,0"/>
+		</Grid>
+	</Grid>
+</UserControl>

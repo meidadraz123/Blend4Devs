@@ -1,0 +1,19 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP7Tasks", "WP7Tasks\WP7Tasks.csproj", "{8d8219db-6e29-455f-ac7a-630b953e499e}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D8219DB-6E29-455F-AC7A-630B953E499E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D8219DB-6E29-455F-AC7A-630B953E499E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D8219DB-6E29-455F-AC7A-630B953E499E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8D8219DB-6E29-455F-AC7A-630B953E499E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D8219DB-6E29-455F-AC7A-630B953E499E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D8219DB-6E29-455F-AC7A-630B953E499E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

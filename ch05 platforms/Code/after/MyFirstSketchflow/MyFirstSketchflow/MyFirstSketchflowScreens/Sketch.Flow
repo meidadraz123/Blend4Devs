@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SchemaVersion="2">
+  <SketchFlowGuid>5d23e899-a2e5-4f1e-84d8-17583e3eff93</SketchFlowGuid>
+  <StartScreen>MyFirstSketchflowScreens.Screen_1</StartScreen>
+  <Screens>
+    <Screen>
+      <Type>Navigation</Type>
+      <ClassName>MyFirstSketchflowScreens.Screen_1</ClassName>
+      <DisplayName>Screen 1</DisplayName>
+      <FileName>Screen_1.xaml</FileName>
+      <Annotations>
+        <Annotation>
+          <Id />
+          <Text>Make the title bigger...ANything else to changes?</Text>
+          <Top>8</Top>
+          <Left>143.865</Left>
+          <Author>Shawn Wildermuth</Author>
+          <AuthorInitials>STW</AuthorInitials>
+          <SerialNumber>1</SerialNumber>
+          <VisibleAtRuntime>true</VisibleAtRuntime>
+          <TimeStamp>2011-11-07T09:28:48</TimeStamp>
+        </Annotation>
+      </Annotations>
+      <Position>
+        <X>20</X>
+        <Y>-24</Y>
+      </Position>
+      <VisualTag>0</VisualTag>
+    </Screen>
+    <Screen>
+      <Type>Navigation</Type>
+      <ClassName>MyFirstSketchflowScreens.Second_Secreen</ClassName>
+      <DisplayName>Second Secreen</DisplayName>
+      <FileName>Second_Secreen.xaml</FileName>
+      <Annotations />
+      <Position>
+        <X>189</X>
+        <Y>-13</Y>
+      </Position>
+      <VisualTag>0</VisualTag>
+    </Screen>
+    <Screen>
+      <Type>Navigation</Type>
+      <ClassName>MyFirstSketchflowScreens.Third_Screen</ClassName>
+      <DisplayName>Third Screen</DisplayName>
+      <FileName>Third_Screen.xaml</FileName>
+      <Annotations />
+      <Position>
+        <X>327</X>
+        <Y>-6</Y>
+      </Position>
+      <VisualTag>0</VisualTag>
+    </Screen>
+  </Screens>
+  <Connections>
+    <Connection>
+      <Source>MyFirstSketchflowScreens.Screen_1</Source>
+      <Target>MyFirstSketchflowScreens.Second_Secreen</Target>
+      <Type>Navigation</Type>
+      <TransitionType>Fade</TransitionType>
+      <VisualTag>0</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>MyFirstSketchflowScreens.Second_Secreen</Source>
+      <Target>MyFirstSketchflowScreens.Third_Screen</Target>
+      <Type>Navigation</Type>
+      <TransitionType>Fade</TransitionType>
+      <VisualTag>0</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>MyFirstSketchflowScreens.Third_Screen</Source>
+      <Target>MyFirstSketchflowScreens.Second_Secreen</Target>
+      <Type>Navigation</Type>
+      <TransitionType>Fade</TransitionType>
+      <VisualTag>0</VisualTag>
+    </Connection>
+  </Connections>
+  <PrototypeRevision>1</PrototypeRevision>
+  <BrandingText>Microsoft SketchFlow Prototype</BrandingText>
+  <RuntimeOptions>
+    <HideNavigation>false</HideNavigation>
+    <HideFlowGraph>false</HideFlowGraph>
+    <HideAnnotationAndInk>false</HideAnnotationAndInk>
+    <DisableInking>false</DisableInking>
+    <HideDesignTimeAnnotations>false</HideDesignTimeAnnotations>
+  </RuntimeOptions>
+  <VisualTags>
+    <VisualTag>
+      <Name>Navigation</Name>
+      <Color>FF1E2AD6</Color>
+    </VisualTag>
+    <VisualTag>
+      <Name>Component</Name>
+      <Color>FF178F11</Color>
+    </VisualTag>
+    <VisualTag>
+      <Name>Yellow</Name>
+      <Color>FFFEC600</Color>
+    </VisualTag>
+    <VisualTag>
+      <Name>Orange</Name>
+      <Color>FFF06000</Color>
+    </VisualTag>
+    <VisualTag>
+      <Name>Red</Name>
+      <Color>FFCC0202</Color>
+    </VisualTag>
+    <VisualTag>
+      <Name>Violet</Name>
+      <Color>FF780099</Color>
+    </VisualTag>
+    <VisualTag>
+      <Name>Gray</Name>
+      <Color>FF6B6B6B</Color>
+    </VisualTag>
+    <VisualTag>
+      <Name>White</Name>
+      <Color>FFFFFFFF</Color>
+    </VisualTag>
+  </VisualTags>
+  <ViewState>
+    <Zoom>1</Zoom>
+    <Center>
+      <X>227.5</X>
+      <Y>40</Y>
+    </Center>
+  </ViewState>
+</Data>

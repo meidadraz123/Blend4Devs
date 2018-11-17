@@ -1,0 +1,31 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="AdvancedBlend.GameEditor"
+	d:DesignWidth="464" d:DesignHeight="206">
+
+	<Grid x:Name="LayoutRoot">
+		<TextBlock TextWrapping="Wrap" Text="Name" Height="16" VerticalAlignment="Top">
+			<TextBlock.Foreground>
+				<SolidColorBrush Color="{StaticResource MainForegroundColor}"/>
+			</TextBlock.Foreground>
+		</TextBlock>
+		<TextBox TextWrapping="Wrap" Text="{Binding Name, Mode=TwoWay}" Height="26" Margin="0,23,0,0" VerticalAlignment="Top"/>
+		<TextBlock TextWrapping="Wrap" Text="Price" Height="16" Margin="0,56,0,0" VerticalAlignment="Top">
+			<TextBlock.Foreground>
+				<SolidColorBrush Color="{StaticResource MainForegroundColor}"/>
+			</TextBlock.Foreground>
+		</TextBlock>
+		<TextBox TextWrapping="Wrap" Text="{Binding Price, Mode=TwoWay}" Margin="0,79,0,94" d:LayoutOverrides="Height"/>
+		<TextBlock TextWrapping="Wrap" Text="Release Date" Height="16" Margin="0,0,0,71" VerticalAlignment="Bottom">
+			<TextBlock.Foreground>
+				<SolidColorBrush Color="{StaticResource MainForegroundColor}"/>
+			</TextBlock.Foreground>
+		</TextBlock>
+		<TextBox TextWrapping="Wrap" Text="{Binding ReleaseDate, Mode=TwoWay}" BorderBrush="Black" Height="26" Margin="0,0,0,38" VerticalAlignment="Bottom"/>
+		<Button Content="Save" Style="{StaticResource ShinyButton}" Background="#FF93CA46" Height="75" RenderTransformOrigin="1.547,2.158" HorizontalAlignment="Right" Width="137" VerticalAlignment="Bottom" Margin="0,0,0,-37"/>
+	</Grid>
+</UserControl>

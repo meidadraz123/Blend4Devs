@@ -1,0 +1,13 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="WPFTasks.MainWindow"
+	x:Name="Window"
+	Title="MainWindow"
+	Width="640" Height="480">
+
+	<Grid x:Name="LayoutRoot">
+		<TextBlock Height="66.654" Margin="8,8,309.987,0" TextWrapping="Wrap" Text="Fun in WPF" VerticalAlignment="Top" FontSize="32"/>
+		<Button Content="Button" HorizontalAlignment="Right" Height="38.239" Margin="0,36.415,66.465,0" VerticalAlignment="Top" Width="165.032"/>
+	</Grid>
+</Window>

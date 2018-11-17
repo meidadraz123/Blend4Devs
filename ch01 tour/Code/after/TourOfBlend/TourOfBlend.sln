@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TourOfBlendSite", "TourOfBlendSite\", "{5cd3e2a2-d07f-4422-9ec0-fe1909851e61}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjOutputReferences = "{2023c422-8b1d-4374-8ffd-8d618cc35b5d}|ClientBin|false;"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TourOfBlend", "TourOfBlend\TourOfBlend.csproj", "{2023c422-8b1d-4374-8ffd-8d618cc35b5d}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CD3E2A2-D07F-4422-9EC0-FE1909851E61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CD3E2A2-D07F-4422-9EC0-FE1909851E61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CD3E2A2-D07F-4422-9EC0-FE1909851E61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CD3E2A2-D07F-4422-9EC0-FE1909851E61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2023C422-8B1D-4374-8FFD-8D618CC35B5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2023C422-8B1D-4374-8FFD-8D618CC35B5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2023C422-8B1D-4374-8FFD-8D618CC35B5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2023C422-8B1D-4374-8FFD-8D618CC35B5D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

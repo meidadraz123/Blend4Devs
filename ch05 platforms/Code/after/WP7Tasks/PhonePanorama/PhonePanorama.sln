@@ -1,0 +1,19 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhonePanorama", "PhonePanorama\PhonePanorama.csproj", "{e36b0e98-ba0a-4309-ba76-4e6c00ea633b}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E36B0E98-BA0A-4309-BA76-4E6C00EA633B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E36B0E98-BA0A-4309-BA76-4E6C00EA633B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E36B0E98-BA0A-4309-BA76-4E6C00EA633B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E36B0E98-BA0A-4309-BA76-4E6C00EA633B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E36B0E98-BA0A-4309-BA76-4E6C00EA633B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E36B0E98-BA0A-4309-BA76-4E6C00EA633B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,9 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "DesignWithBlendSite", "DesignWithBlendSite\", "{3609CE08-59E4-43A3-9064-1E926A7BE41F}"
 	ProjectSection(WebsiteProperties) = preProject
-		Frontpage = "false"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/DesignWithBlendSite"
 		Debug.AspNetCompiler.PhysicalPath = "DesignWithBlendSite\"
@@ -20,6 +21,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "DesignWithBlendSite", "Desi
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "29690"
+		SlnRelativePath = "DesignWithBlendSite\"
 		ProjOutputReferences = "{4bd4e068-d832-463c-9129-51a8b6c99797}|ClientBin|false;"
 	EndProjectSection
 EndProject
@@ -28,17 +30,27 @@ EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{3609CE08-59E4-43A3-9064-1E926A7BE41F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3609CE08-59E4-43A3-9064-1E926A7BE41F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3609CE08-59E4-43A3-9064-1E926A7BE41F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3609CE08-59E4-43A3-9064-1E926A7BE41F}.Debug|x64.Build.0 = Debug|Any CPU
 		{3609CE08-59E4-43A3-9064-1E926A7BE41F}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{3609CE08-59E4-43A3-9064-1E926A7BE41F}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{3609CE08-59E4-43A3-9064-1E926A7BE41F}.Release|x64.ActiveCfg = Debug|Any CPU
+		{3609CE08-59E4-43A3-9064-1E926A7BE41F}.Release|x64.Build.0 = Debug|Any CPU
 		{4BD4E068-D832-463C-9129-51A8B6C99797}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4BD4E068-D832-463C-9129-51A8B6C99797}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BD4E068-D832-463C-9129-51A8B6C99797}.Debug|x64.ActiveCfg = Debug|x64
+		{4BD4E068-D832-463C-9129-51A8B6C99797}.Debug|x64.Build.0 = Debug|x64
 		{4BD4E068-D832-463C-9129-51A8B6C99797}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BD4E068-D832-463C-9129-51A8B6C99797}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BD4E068-D832-463C-9129-51A8B6C99797}.Release|x64.ActiveCfg = Release|x64
+		{4BD4E068-D832-463C-9129-51A8B6C99797}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

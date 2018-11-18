@@ -1,8 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "DesignWithBlendSite", "DesignWithBlendSite\", "{3609CE08-59E4-43A3-9064-1E926A7BE41F}"
 	ProjectSection(WebsiteProperties) = preProject
+		Frontpage = "false"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/DesignWithBlendSite"
 		Debug.AspNetCompiler.PhysicalPath = "DesignWithBlendSite\"
@@ -32,8 +33,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{3609CE08-59E4-43A3-9064-1E926A7BE41F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3609CE08-59E4-43A3-9064-1E926A7BE41F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3609CE08-59E4-43A3-9064-1E926A7BE41F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3609CE08-59E4-43A3-9064-1E926A7BE41F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3609CE08-59E4-43A3-9064-1E926A7BE41F}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{3609CE08-59E4-43A3-9064-1E926A7BE41F}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{4BD4E068-D832-463C-9129-51A8B6C99797}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4BD4E068-D832-463C-9129-51A8B6C99797}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BD4E068-D832-463C-9129-51A8B6C99797}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -41,5 +42,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {37C9C9B5-D8FF-4627-A9C8-1FB4F975DA09}
 	EndGlobalSection
 EndGlobal

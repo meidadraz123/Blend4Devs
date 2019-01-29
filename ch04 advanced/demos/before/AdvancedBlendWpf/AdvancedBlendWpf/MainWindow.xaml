@@ -28,15 +28,31 @@
             <ColumnDefinition Width="477*"/>
             <ColumnDefinition Width="30"/>
         </Grid.ColumnDefinitions>
-        <Rectangle Grid.ColumnSpan="4" Fill="#FFF4F4F5" Margin="10" Grid.RowSpan="3" Stroke="Black" RadiusY="20.594" RadiusX="20.594" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin"/>
+        <Rectangle Grid.ColumnSpan="4" Margin="10" Grid.RowSpan="3" RadiusY="20.594" RadiusX="20.594" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin" Fill="{DynamicResource MainGradient}">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="{StaticResource MainForegroundColor}"/>
+            </Rectangle.Stroke>
+        </Rectangle>
         <ListBox x:Name="theList" Grid.Column="1" Grid.Row="1" Margin="0,0,5.394,0" ItemTemplate="{DynamicResource GamesItemTemplate}" ItemsSource="{Binding Games}"/>
         <Grid x:Name="theEditor" Grid.Column="2" Height="130.885" Margin="-0.394,11,0,0" Grid.Row="1" VerticalAlignment="Top" DataContext="{Binding SelectedItem, ElementName=theList}">
             <TextBox x:Name="nameTextBox" Height="19.364" Margin="0.394,20.525,0,0" TextWrapping="Wrap" Text="{Binding Name, Mode=TwoWay}" VerticalAlignment="Top"/>
-            <Label x:Name="namelabel" Content="_Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0.788,0,0,0" Width="42" Target="{Binding ElementName=nameTextBox, Mode=OneWay}"/>
+            <Label x:Name="namelabel" Content="_Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0.788,0,0,0" Width="42" Target="{Binding ElementName=nameTextBox, Mode=OneWay}">
+                <Label.Foreground>
+                    <SolidColorBrush Color="{StaticResource MainForegroundColor}"/>
+                </Label.Foreground>
+            </Label>
             <TextBox x:Name="priceTextBox" Margin="0,65.414,0.394,46.107" TextWrapping="Wrap" Text="{Binding Price}"/>
-            <Label x:Name="pricelabel" Content="_Price" HorizontalAlignment="Left" Margin="0.394,44.889,0,60.036" Width="42" Target="{Binding ElementName=priceTextBox, Mode=OneWay}" d:LayoutOverrides="Height"/>
+            <Label x:Name="pricelabel" Content="_Price" HorizontalAlignment="Left" Margin="0.394,44.889,0,60.036" Width="42" Target="{Binding ElementName=priceTextBox, Mode=OneWay}" d:LayoutOverrides="Height">
+                <Label.Foreground>
+                    <SolidColorBrush Color="{StaticResource MainForegroundColor}"/>
+                </Label.Foreground>
+            </Label>
             <TextBox x:Name="releaseDateTextBox" Height="19.364" Margin="0,0,0.394,0" TextWrapping="Wrap" Text="{Binding ReleaseDate}" VerticalAlignment="Bottom"/>
-            <Label x:Name="releaseDatelabel" Content="_Release Date" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0.394,0,0,13.93" Target="{Binding ElementName=releaseDateTextBox, Mode=OneWay}"/>
+            <Label x:Name="releaseDatelabel" Content="_Release Date" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0.394,0,0,13.93" Target="{Binding ElementName=releaseDateTextBox, Mode=OneWay}">
+                <Label.Foreground>
+                    <SolidColorBrush Color="{StaticResource MainForegroundColor}"/>
+                </Label.Foreground>
+            </Label>
 
         </Grid>
 

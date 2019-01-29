@@ -5,6 +5,12 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:OurSampleData="clr-namespace:Expression.Blend.SampleData.OurSampleData" mc:Ignorable="d" x:Class="AdvancedBlendWpf.App"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <OurSampleData:OurSampleData x:Key="OurSampleData" d:IsDataSource="True"/>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Colors.xaml"/>
+                <ResourceDictionary Source="Brushes.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <OurSampleData:OurSampleData x:Key="OurSampleData" d:IsDataSource="True"/>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

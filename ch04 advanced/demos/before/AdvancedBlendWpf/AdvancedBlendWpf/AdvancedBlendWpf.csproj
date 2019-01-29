@@ -58,6 +58,14 @@
     <Compile Include="SampleData\OurSampleData\OurSampleData.xaml.cs">
       <DependentUpon>OurSampleData.xaml</DependentUpon>
     </Compile>
+    <Page Include="Brushes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Colors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

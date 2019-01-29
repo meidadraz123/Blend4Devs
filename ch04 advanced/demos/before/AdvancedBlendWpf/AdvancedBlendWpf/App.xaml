@@ -9,6 +9,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Colors.xaml"/>
                 <ResourceDictionary Source="Brushes.xaml"/>
+                <ResourceDictionary Source="Styles.xaml"/>
             </ResourceDictionary.MergedDictionaries>
             <OurSampleData:OurSampleData x:Key="OurSampleData" d:IsDataSource="True"/>
         </ResourceDictionary>

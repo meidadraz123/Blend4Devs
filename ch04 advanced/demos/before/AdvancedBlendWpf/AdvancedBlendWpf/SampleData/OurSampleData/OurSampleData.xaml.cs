@@ -45,6 +45,20 @@ namespace Expression.Blend.SampleData.OurSampleData
                 return this._Games;
             }
         }
+
+        private sample_texts _sample_texts = new sample_texts();
+
+        public sample_texts sample_texts
+        {
+            get
+            {
+                return this._sample_texts;
+            }
+        }
+    }
+
+    public class Games : System.Collections.ObjectModel.ObservableCollection<GamesItem>
+    { 
     }
 
     public class GamesItem : INotifyPropertyChanged
@@ -136,7 +150,39 @@ namespace Expression.Blend.SampleData.OurSampleData
         }
     }
 
-    public class Games : System.Collections.ObjectModel.ObservableCollection<GamesItem>
+    public class sample_textsItem : INotifyPropertyChanged
+    {
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            if (this.PropertyChanged != null)
+            {
+                this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        private string _song_name = string.Empty;
+
+        public string song_name
+        {
+            get
+            {
+                return this._song_name;
+            }
+
+            set
+            {
+                if (this._song_name != value)
+                {
+                    this._song_name = value;
+                    this.OnPropertyChanged("song_name");
+                }
+            }
+        }
+    }
+
+    public class sample_texts : System.Collections.ObjectModel.ObservableCollection<sample_textsItem>
     { 
     }
 #endif

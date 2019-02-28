@@ -9,6 +9,7 @@
   <xs:complexType name="OurSampleData">
     <xs:sequence>
       <xs:element name="Games" type="tns:Games" />
+      <xs:element name="sample_texts" type="tns:sample_texts" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="Games">
@@ -25,4 +26,12 @@
   <xs:simpleType name="Basic-Image">
     <xs:restriction base="xs:anyURI" />
   </xs:simpleType>
+  <xs:complexType name="sample_texts">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" name="sample_textsItem" type="tns:sample_textsItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="sample_textsItem">
+    <xs:attribute name="song_name" type="xs:string" />
+  </xs:complexType>
 </xs:schema>

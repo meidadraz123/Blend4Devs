@@ -33,7 +33,7 @@
                 <SolidColorBrush Color="{StaticResource MainForegroundColor}"/>
             </Rectangle.Stroke>
         </Rectangle>
-        <ListBox x:Name="theList" Grid.Column="1" Grid.Row="1" Margin="0,0,5.394,0" ItemTemplate="{DynamicResource GamesItemTemplate}" ItemsSource="{Binding Games}"/>
+        <ListBox x:Name="theList" Grid.Column="1" Grid.Row="1" Margin="0,0,5.394,0" ItemTemplate="{DynamicResource GamesItemTemplate}" ItemsSource="{Binding Games}" Style="{DynamicResource MyListBox}"/>
         <Grid x:Name="theEditor" Grid.Column="2" Height="130.885" Margin="-0.394,11,0,0" Grid.Row="1" VerticalAlignment="Top" DataContext="{Binding SelectedItem, ElementName=theList}">
             <TextBox x:Name="nameTextBox" Height="19.364" Margin="0.394,20.525,0,0" TextWrapping="Wrap" Text="{Binding Name, Mode=TwoWay}" VerticalAlignment="Top"/>
             <Label x:Name="namelabel" Content="_Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0.788,0,0,0" Width="42" Target="{Binding ElementName=nameTextBox, Mode=OneWay}">
@@ -55,6 +55,9 @@
             </Label>
 
         </Grid>
+        <Button x:Name="button" Content="Button" Grid.Column="2" Margin="10,146.885,0,160.115" Grid.Row="1" Style="{DynamicResource ShinyButton}" Background="#FFE62DD5" HorizontalAlignment="Left" Width="122"/>
+        <Slider x:Name="slider" Grid.Column="2" Margin="156,158.885,40.758,160.115" Grid.Row="1" Style="{DynamicResource MySlider}"/>
+        <ScrollViewer Grid.Column="2" Height="63" Margin="51.357,0,82.758,80" Grid.Row="1" VerticalAlignment="Bottom" Background="#FFF37373" Template="{DynamicResource MyScrollViewer}" Content="{Binding sample_texts/song_name}" FontSize="72"/>
 
     </Grid>
 </Window>

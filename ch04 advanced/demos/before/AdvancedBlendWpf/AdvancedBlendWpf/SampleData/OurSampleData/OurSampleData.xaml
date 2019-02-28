@@ -31,4 +31,29 @@
 		<OurSampleData:GamesItem Name="Per fusce" Price="418" ReleaseDate="September 10, 2006" CoverImage="OurSampleData_Files\boxthestrike.jpg"/>
 		<OurSampleData:GamesItem Name="Lorem enim" Price="611" ReleaseDate="September 5, 2005" CoverImage="OurSampleData_Files\gearsofwar2.jpg"/>
 	</OurSampleData:OurSampleData.Games>
+	<OurSampleData:OurSampleData.sample_texts>
+		<OurSampleData:sample_textsItem song_name="Nam aenean maecenas"/>
+		<OurSampleData:sample_textsItem song_name="Praesent class"/>
+		<OurSampleData:sample_textsItem song_name="Mauris sed curae"/>
+		<OurSampleData:sample_textsItem song_name="Accumsan cras dis bibendum"/>
+		<OurSampleData:sample_textsItem song_name="Nullam aliquam duis est"/>
+		<OurSampleData:sample_textsItem song_name="Aptent dictumst hac auctor"/>
+		<OurSampleData:sample_textsItem song_name="Eleifend integer"/>
+		<OurSampleData:sample_textsItem song_name="Quisque congue"/>
+		<OurSampleData:sample_textsItem song_name="Nunc vivamus"/>
+		<OurSampleData:sample_textsItem song_name="Aliquam cursus facilisi faucibus"/>
+		<OurSampleData:sample_textsItem song_name="Nam aliquam"/>
+		<OurSampleData:sample_textsItem song_name="Integer class"/>
+		<OurSampleData:sample_textsItem song_name="Cras curae"/>
+		<OurSampleData:sample_textsItem song_name="Duis nunc sed dis"/>
+		<OurSampleData:sample_textsItem song_name="Quisque est amet"/>
+		<OurSampleData:sample_textsItem song_name="Hac donec maecenas"/>
+		<OurSampleData:sample_textsItem song_name="Vivamus aliquam aliquet"/>
+		<OurSampleData:sample_textsItem song_name="Etiam ante praesent arcu"/>
+		<OurSampleData:sample_textsItem song_name="Blandit fusce diam commodo"/>
+		<OurSampleData:sample_textsItem song_name="Eget conubia"/>
+		<OurSampleData:sample_textsItem song_name="Aenean accumsan lorem"/>
+		<OurSampleData:sample_textsItem song_name="Mauris bibendum leo"/>
+		<OurSampleData:sample_textsItem song_name="Morbi elit enim"/>
+	</OurSampleData:OurSampleData.sample_texts>
 </OurSampleData:OurSampleData>

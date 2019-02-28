@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="AdvancedBlendWpf.GameEditor"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AdvancedBlendWpf"
+             mc:Ignorable="d" 
+             d:DesignHeight="130.885" d:DesignWidth="397.509">
+    <Grid>
+        <TextBox x:Name="nameTextBox" Height="19.364" Margin="-1.097,16.505,1.491,0" TextWrapping="Wrap" Text="{Binding Name, Mode=TwoWay}" VerticalAlignment="Top"/>
+        <Label x:Name="namelabel" Content="_Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-0.703,-3.56,0,0" Target="{Binding ElementName=nameTextBox, Mode=OneWay}">
+            <Label.Foreground>
+                <SolidColorBrush Color="{StaticResource MainForegroundColor}"/>
+            </Label.Foreground>
+        </Label>
+        <TextBox x:Name="priceTextBox" Margin="-1.491,61.394,1.885,50.127" TextWrapping="Wrap" Text="{Binding Price}"/>
+        <Label x:Name="pricelabel" Content="_Price" HorizontalAlignment="Left" Margin="-1.097,0,0,64.056" Target="{Binding ElementName=priceTextBox, Mode=OneWay}" VerticalAlignment="Bottom">
+            <Label.Foreground>
+                <SolidColorBrush Color="{StaticResource MainForegroundColor}"/>
+            </Label.Foreground>
+        </Label>
+        <TextBox x:Name="releaseDateTextBox" Height="19.364" Margin="-1.491,0,1.885,4.02" TextWrapping="Wrap" Text="{Binding ReleaseDate}" VerticalAlignment="Bottom"/>
+        <Label x:Name="releaseDatelabel" Content="_Release Date" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0.509,0,0,19.167" Target="{Binding ElementName=releaseDateTextBox, Mode=OneWay}">
+            <Label.Foreground>
+                <SolidColorBrush Color="{StaticResource MainForegroundColor}"/>
+            </Label.Foreground>
+        </Label>
+
+    </Grid>
+</UserControl>

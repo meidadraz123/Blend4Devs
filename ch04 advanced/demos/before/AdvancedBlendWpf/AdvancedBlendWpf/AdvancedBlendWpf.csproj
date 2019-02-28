@@ -57,6 +57,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="GameEditor.xaml.cs">
+      <DependentUpon>GameEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GamesEditor.xaml.cs">
+      <DependentUpon>GamesEditor.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SampleData\OurSampleData\OurSampleData.xaml.cs">
       <DependentUpon>OurSampleData.xaml</DependentUpon>
     </Compile>
@@ -65,6 +71,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Colors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GameEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GamesEditor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
